@@ -1,2 +1,6 @@
 # node-js-backend
-my project node-js
+my project
+Languages used:
+JavaScript,
+TypeScript,
+
