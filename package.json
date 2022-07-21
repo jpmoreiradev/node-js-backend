@@ -4,6 +4,9 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "scripts": {
+    "dev": "node src/script.js"
+  },
   "dependencies": {
     "axios": "^0.26.1"
   }

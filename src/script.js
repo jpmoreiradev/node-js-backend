@@ -12,8 +12,8 @@ class Api {
 
 class Address {
     constructor ({ logradouro, bairro, localidade}) {
-        this.logradouro = logradouro,
-        this.bairro = bairro,
+        this.logradouro = logradouro ? logradouro : 'no logradouro',
+        this.bairro = bairro ? bairro : 'no bairro',
         this.localidade = localidade
     }
 
@@ -21,5 +21,6 @@ class Address {
 
 
 }
-Api.getAddress("63960000").then(v => {console.log(v)});
+
+Api.getAddress("63960000").then(item => {console.log(item)});
 
