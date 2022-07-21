@@ -1,0 +1,8 @@
+{
+  "name": "node-js-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JPMoreiraAquino/node-js-backend.git",
+  "author": "João Pedro <jp02120123@gmail.com>",
+  "license": "MIT"
+}
