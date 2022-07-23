@@ -6,6 +6,7 @@
   "author": "João Pedro <jp02120123@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "devDependencies": {
@@ -24,7 +25,10 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@types/jsdom": "^16.2.15",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0",
+    "puppeteer": "^15.5.0"
   }
 }

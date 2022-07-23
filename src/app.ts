@@ -1,11 +1,24 @@
+import dotenv from 'dotenv';
 import express from 'express';
+import { getPackageCorreios } from './correio-service';
+
+dotenv.config();
 
 const app = express();
 
-app.get('/', (req, res) => res.send('Hello world'));
+const PORT = process.env.PORT || 8899;
 
-app.get('/users', () => {});
+app.get('/package/:packageId', async (req : express.Request, res : express.Response) => {
+  const { packageId } = req.params;
+  // const now = new Date();
+  const packageInfo = await getPackageCorreios(packageId);
+  // const end = new Date();
 
-app.get('/emails', () => {});
+  // console.log(`Elapsed ${end.getTime() - now.getTime()}ms`);
+  res.json(packageInfo);
+});
 
-app.listen(3000);
+app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log(`Serve running at ${PORT}`);
+});
