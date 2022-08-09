@@ -17,4 +17,4 @@ You can access it using the command: "git checkout address"
 
 This project provides information from the CEP informed
 
-
+[![wakatime](https://wakatime.com/badge/user/81f81130-04c5-4bbb-8ca5-00deb55f82ee/project/8d62ea6e-9f6c-480b-9280-4d1d59b40a8e.svg)](https://wakatime.com/badge/user/81f81130-04c5-4bbb-8ca5-00deb55f82ee/project/8d62ea6e-9f6c-480b-9280-4d1d59b40a8e)
