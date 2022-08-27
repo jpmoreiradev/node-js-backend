@@ -5,7 +5,10 @@
   "repository": "git@github.com:JPMoreiraAquino/node-js-backend.git",
   "author": "João Pedro <jp02120123@gmail.com>",
   "license": "MIT",
-   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.19"
   }
 }
