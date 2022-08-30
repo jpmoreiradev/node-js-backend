@@ -12,6 +12,3 @@ app.get('/', (req, res ) => {
 app.listen(3000, () => {
   logger.info('Serve is running');
 })
-
-
- 

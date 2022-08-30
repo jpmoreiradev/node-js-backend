@@ -6,7 +6,7 @@
   "author": "João Pedro <jp02120123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:ts": "tsc",
+    "start:ts": "tsc -w",
     "start:js": "nodemon -r dotenv/config -e js,json,ts dist/app/app.js | pino-pretty",
     "dev": "concurrently yarn:start:*",
     "build": "yarn tsc"
