@@ -1,14 +1,10 @@
-import express from "express";
-import  logger   from "../config/logger";
+require('dotenv/config')
+import { Telegraf} from'telegraf';
 
-const app = express();
+const bot  = new Telegraf(process.env.TELEGRAM_KEY as string)
 
 
 
-app.get('/', (req, res ) => {
- res.send('Hello World')
-})
+bot.command("cortar",(ctx: any) => {ctx.reply("RAMDAMDAMDAMDAMPOWPOWPOWPOWPOW")})
 
-app.listen(3000, () => {
-  logger.info('Serve is running');
-})
+bot.launch()
