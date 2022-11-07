@@ -7,10 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start:ts": "tsc -w",
-    "start:js": "nodemon -r dotenv/config -e js,json,ts dist/app/app.js | pino-pretty",
+    "start:js": "nodemon -r dotenv/config -e js,json,ts dist/app/server.js | pino-pretty",
     "dev": "concurrently yarn:start:*",
-    "build": "yarn tsc",
-    "tele": "node ./src/app/app.js"
+    "build": "yarn tsc"
   },
   "dependencies": {
     "@types/eslint": "^8.4.6",

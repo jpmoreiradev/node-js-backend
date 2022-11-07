@@ -1,10 +1,8 @@
-require('dotenv/config')
-import { Telegraf} from'telegraf';
+import { Telegraf } from 'telegraf';
+import { MyContext } from '../@types/MyContext';
 
-const bot  = new Telegraf(process.env.TELEGRAM_KEY as string)
+const bot = new Telegraf<MyContext>(process.env.TELEGRAM_KEY as string);
+bot.start((ctx) => ctx.reply('Welcome'));
+bot.launch();
 
-
-
-bot.command("cortar",(ctx: any) => {ctx.reply("RAMDAMDAMDAMDAMPOWPOWPOWPOWPOW")})
-
-bot.launch()
+export default bot;
